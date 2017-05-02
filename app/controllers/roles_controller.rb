@@ -8,6 +8,7 @@ class RolesController < ApplicationController
   end
 
   def new_form
+    render("roles/new_form.html.erb")
   end
 
   def create_row
@@ -23,6 +24,7 @@ class RolesController < ApplicationController
 
   def edit_form
     @role = Role.find(params[:id])
+    render("roles/edit_form.html.erb")
   end
 
   def update_row
